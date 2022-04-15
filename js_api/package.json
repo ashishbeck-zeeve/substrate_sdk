@@ -1,0 +1,59 @@
+{
+  "name": "@substrate_sdk/js-api",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Substrate",
+    "Substrate Wallet",
+    "Substrate SDK"
+  ],
+  "author": "Ashish Beck <ashish.beck@zeeve.io>",
+  "maintainers": [
+    "Ashish Beck <ashish.beck@zeeve.io>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishbeck-zeeve/substrate_sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashishbeck-zeeve/substrate_sdk/issues"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development"
+  },
+  "resolutions": {
+    "@axia-js/api": "^0.1.1"
+  },
+  "dependencies": {
+    "@axia-js/api": "^0.1.1",
+    "@axia-js/ui-keyring": "^0.1.0",
+    "@axia-js/ui-shared": "0.1.0",
+    "@axia-core/txwrapper-axia": "0.1.3",
+    "@walletconnect/client": "2.0.0-alpha.26",
+    "bn.js": "^5.1.2",
+    "oo7-substrate": "^0.8.0",
+    "process": "^0.11.10",
+    "secp256k1": "^3.8.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-typescript": "^7.14.5",
+    "@webpack-cli/info": "^0.2.0",
+    "@webpack-cli/init": "^0.3.0",
+    "babel-loader": "^8.0.6",
+    "crypto-browserify": "^3.12.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "stream-browserify": "^3.0.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
