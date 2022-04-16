@@ -34,7 +34,7 @@ class WebViewRunner {
     _jsCode = jsCode ??
         await rootBundle
             .loadString('packages/substrate_sdk/js_api/dist/main.js');
-    print('js file loaded');
+    print('js file loading');
 
     if (_web == null) {
       await _startLocalServer();

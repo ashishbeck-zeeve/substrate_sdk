@@ -6,7 +6,7 @@ import basic from "./service/basic";
 function send(path: string, data: any) {
   console.log(JSON.stringify({ path, data }));
 }
-send("log", "main js loading");
+send("log", "main js loaded");
 (<any>window).send = send;
 
 /**
